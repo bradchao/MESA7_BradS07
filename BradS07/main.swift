@@ -8,13 +8,29 @@
 
 import Foundation
 
-var str = "Hello, World"
+// Regex
+//var str = "Hello, World"
+//ge = str.range(of: "^H.*d$", options: .regularExpression) {
+//    let result = str.substring(with: range)
+//    print("OK: \(result)")
+//}else {
+//    print("XX")
+//}
 
-if let range = str.range(of: "^H.*d$", options: .regularExpression) {
-    let result = str.substring(with: range)
-    print("OK: \(result)")
-}else {
-    print("XX")
+func mysort(a:Int, b:Int) -> Bool {
+    return true
 }
+
+print(type(of:mysort))
+
+let a1 = [4,2,7,1,45,1234,3,14,5]
+let a2 = a1.sorted(by: mysort)
+print(a2.description)
+
+
+
+
+
+
 
 
