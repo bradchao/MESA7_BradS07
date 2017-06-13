@@ -17,15 +17,28 @@ import Foundation
 //    print("XX")
 //}
 
+// 1
 func mysort(a:Int, b:Int) -> Bool {
-    return true
+    //print("\(a) : \(b)")
+    return a<b
 }
 
 print(type(of:mysort))
 
-let a1 = [4,2,7,1,45,1234,3,14,5]
+let a1 = [4,2,7,1]
 let a2 = a1.sorted(by: mysort)
 print(a2.description)
+
+// 2
+let a3 = a1.sorted(by:
+    {(a,b) -> Bool in
+        print("\(a) : \(b)")
+        return a < b
+    })
+print(a3.description)
+
+
+
 
 
 
