@@ -8,4 +8,13 @@
 
 import Foundation
 
+var str = "Hello, World"
+
+if let range = str.range(of: "^H.*d$", options: .regularExpression) {
+    let result = str.substring(with: range)
+    print("OK: \(result)")
+}else {
+    print("XX")
+}
+
 
